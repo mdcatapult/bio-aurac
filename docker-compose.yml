@@ -1,0 +1,69 @@
+version: '3.9'
+
+services:
+  redis:
+    image: redis:latest
+    ports:
+      - 6379:6379
+
+  # Entity recognition
+  dictionary-importer:
+    volumes:
+      - ./data-volume:/data-volume
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - DICTIONARY_PATH=/data-volume/swiss_prot_genes_proteins.json
+      - DICTIONARY_FORMAT=swissprot
+    image: medicinesdiscoverycatapult/dictionary-importer:1.0.0
+    depends_on:
+      - redis
+
+  dictionary:
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    image: medicinesdiscoverycatapult/dictionary:1.0.0
+    ports:
+      - 50051:50051
+
+  recognition-api:
+    volumes:
+      - type: bind
+        source: ./config/recognition-api.yml
+        target: /app/config/recognition-api.yml
+    image: medicinesdiscoverycatapult/recognition-api:1.0.0
+    ports:
+      - 8080:8080
+
+  # PDF Converter
+  pdf-converter:
+    image: medicinesdiscoverycatapult/pdf-converter:1.0.0
+    ports:
+      - 8000:8000
+
+  
+
+
+
+
+# version: '3.2'
+# services:
+#   api:
+#     build: .
+#     ports:
+#     - "5001:5000"
+
+#     volumes:
+#       - type: volume
+#         source: vast
+#         target: /opt/data-volume
+#         volume:
+#           nocopy: true
+
+# volumes:
+#   vast:
+#     driver_opts:
+#       type: "nfs"
+#       o: "addr=mdc-vast-nfs.medcat.local,nolock,soft,rw"
+#       device: ":/softwareengineering/scratch/dsp/"

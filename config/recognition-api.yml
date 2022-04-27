@@ -1,0 +1,15 @@
+server:
+  http_port: 8080
+
+# blacklist: config/blacklists/global.yml
+
+grpc_recognisers:
+  # The keys in this object will become recognition api query parameters.
+  # i.e. to use this recogniser, do http://localhost:8080/entities?recogniser=dictionary
+  dictionary:
+    host: dictionary
+    port: 50051
+
+
+
+
