@@ -6,7 +6,7 @@ server:
 grpc_recognisers:
   # The keys in this object will become recognition api query parameters.
   # i.e. to use this recogniser, do http://localhost:8080/entities?recogniser=dictionary
-  dictionary:
+  swissprot-genes-proteins:
     host: dictionary
     port: 50051
 
