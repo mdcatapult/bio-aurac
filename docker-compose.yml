@@ -32,6 +32,9 @@ services:
       - type: bind
         source: ./config/recognition-api.yml
         target: /app/config/recognition-api.yml
+      - type: bind
+        source: ./config/blacklist.yml
+        target: /app/config/blacklist.yml
     image: medicinesdiscoverycatapult/recognition-api:1.0.0
     ports:
       - 8080:8080
