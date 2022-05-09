@@ -8,7 +8,7 @@ grpc_recognisers:
     host: dictionary
     port: 50051
 
-blacklist: '/app/config/blacklist.yml'
+blocklist: '/app/config/blocklist.yml'
 
 
 
