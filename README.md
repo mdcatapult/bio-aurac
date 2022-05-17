@@ -54,28 +54,95 @@ Bio-Aurac is a web browser plugin that can be used to highlight genes and protei
 
 ### How to use Bio-Aurac
 
+#### Basic usage
+
 1) Visit the web page that you would like to search for genes and proteins.
 
-2) Click on the extension
+2) Click on the Bio-Aurac icon (next to the address bar in your browser) 
+![Bio-Aurac Icon](browser-plugin/assets/head-brains.icon.48.png "Bio-Aurac icon")
+
+3) The Bio-Aurac popup will appear:
+
+![Bio-Aurac Popup](browser-plugin/assets/Bio-Aurac-Popup.png)
+
+4) Click `Highlight` and terms on the page will be highlighed in purple.  A sidebar will also open on the left of the screen on which  you will see a blue circle containing a number representing the number of terms highlighted on the current page.  Under the default configuration, genes and proteins relating to homo sapiens with a length of three characters or greater will be highlighted.
+
+![Bio-Aurac highlighted page](browser-plugin/assets/Bio-Aurac-highlighted-page.png)
 
 
+5) Click on a highlighted term to add a card to the sidebar with further information and links on the selected term.
 
+![Bio-Aurac clicked highlight](browser-plugin/assets/Bio-Aurac-clicked-highlight.png)
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+6) Each card contains a number of panels which will expand when clicked:
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+   - Synonyms: a list of alternative names and identifiers for the clicked term 
+   - Explore: a list of clickable links to external resources
+   - Protein Sequence: the protein sequence itself, sequence length and sequence mass
+   - General: other information relating to the clicked term, e.g. subcellular location
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+7) Use the arrows in the top right corner of each sidebar card to scroll between synonyms and instances of the clicked term on a page.  Note that this will scroll through all instances of the same term and any synonyms for that gene or protein.
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+#### Managing the sidebar
+
+- any number of cards may be added to the sidebar
+- a card may be removed from the sidebar by clicking the dustbin icon in the top left corner
+- to clear all cards from the sidebar, click the dustbin icon on the right of the sidebar toolbar
+- the contents of the sidebar (i.e. all of the information displayed on each individual card) can be downloaded by clicking the download icon on the right of the sidebar toolbar
+
+#### Configuring what Bio-Aurac will highlight
+
+As noted above, the default configuration will highlight genes and proteins related to homo sapiens with a minimum length of 3 characters.  To highlight terms relating to different species or to change the minimum length of terms to be highlighted, open the popup and click `Preferences`:
+
+![Bio-Aurac preferences](browser-plugin/assets/Bio-Aurac-preferences.png)
+
+The following species are currently supported by Bio-Aurac:
+- Homo sapiens
+- Rattus norvegicus
+- Mus musculus
+- Saccharomyces cerevisiae
+- Drosophilia melanogaster
+- Caenorhabditis elegans
+- Xenopus tropicalis
+- Danio rerio
+
+#### Highlighting a PDF
+
+As well as web pages, Bio-Aurac is able to identify and highlight genes and proteins in pdf documents.  From within the popup click `PDF conversion` and you will be prompted to enter a link (i.e. a web address) to a pdf.  
+
+![Bio-Aurac pdf conversion](browser-plugin/assets/Bio-Aurac-pdf.png)
+
+On entering a link and clicking convert the pdf will be opened in a new browser tab, from where it can be highlighted in the same way as a standard web page.
+
+## Contact
+Contact us by email at [softwareengineering@md.catapult.org.uk](softwareengineering@md.catapult.org.uk) with any comments or enquiries.  For support please raise a ticket on Github.
 
 ## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
 
-## License
-For open source projects, say how it is licensed.
+- Ian Dunlop
+- Nick Etherington
+- Ashley Evans
+- Mark Laing
+- Brad Rollings
+- Michael Sweeton
+- Alex Whitehorn
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+All authors contributed equally.
+
+Thanks to our alpha testers:
+**TODO: list of testers**
+- 
+
+### Credits
+Designed using elements from Heroicon and Vecteezy.com.
+
+## Contributing
+If you would like to contribute to this project please check out the underlying code repositories and submit a pull request:
+
+- [Aurac (browser plugin)]()
+- [Entity recognition]()
+- [PDF converter]()
+
+## Licence
+This project is licensed under the terms of the Apache 2 license, which can be found in the repository as `LICENCE.txt`.
+**TODO: get some feedback as to which licence to use - MIT or Apache?  Both included for now.**
