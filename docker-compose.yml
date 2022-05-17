@@ -35,7 +35,7 @@ services:
       - type: bind
         source: ./config/blocklist.yml
         target: /app/config/blocklist.yml
-    image: medicinesdiscoverycatapult/recognition-api:1.0.0
+    image: medicinesdiscoverycatapult/recognition-api:1.1.0
     ports:
       - 8080:8080
 
