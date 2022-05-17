@@ -143,6 +143,7 @@ If you would like to contribute to this project please check out the underlying 
 - [Entity recognition]()
 - [PDF converter]()
 
+**TODO link to Github repos once we have mirrored our Gitlab repos)**
+
 ## Licence
 This project is licensed under the terms of the Apache 2 license, which can be found in the repository as `LICENCE.txt`.
-**TODO: get some feedback as to which licence to use - MIT or Apache?  Both included for now.**
