@@ -139,9 +139,9 @@ Designed using elements from Heroicon and Vecteezy.com.
 ## Contributing
 If you would like to contribute to this project please check out the underlying code repositories and submit a pull request:
 
-- [Aurac (browser plugin)]()
-- [Entity recognition]()
-- [PDF converter]()
+- [Aurac (browser plugin)](https://github.com/mdcatapult/aurac-web-plugin)
+- [Entity recognition](https://github.com/mdcatapult/entity-recognition)
+- [PDF converter](https://github.com/mdcatapult/PDF-Converter)
 
 **TODO link to Github repos once we have mirrored our Gitlab repos)**
 
