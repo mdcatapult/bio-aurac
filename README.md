@@ -1,9 +1,9 @@
 # Bio-Aurac
 
-Open sourced Bio-Aurac. Contains everything necessary for the user to use Bio-Aurac.
+Bio-Aurac is a web browser plugin designed and created by the Medicines Discovery Catapult (https://md.catapult.org.uk/) to support the scientific and drug discovery community.
 
 ## Overview
-Bio-Aurac is a web browser plugin that can be used to highlight genes and proteins using the swissprot dataset. On a highlighted web page/pdf Bio-Aurac then provides useful tools for the user to explore a gene/protein of interest further.
+The purpose of Bio-Aurac is to facilitate a users literature search. This tool can be used to highlight genes and proteins. On a highlighted web page/pdf Bio-Aurac then provides useful functionality for the user to explore a gene/protein of interest further.
 
 
 ***
@@ -20,9 +20,10 @@ Bio-Aurac is a web browser plugin that can be used to highlight genes and protei
 
 2) Run the following commands in order: 
 
-    - `git clone github...`
+    - `git clone https://github.com/mdcatapult/bio-aurac.git`
     - `cd bio-aurac`
     - `docker-compose up -d --build`
+    This will run the server in the background on your machine allowing the plugin to function. If in the future the plugin does not work the docker-compose command might need to be run again.
 
 #### Using Bio-Aurac in Chrome
 1) Open your Chrome browser.
@@ -85,10 +86,10 @@ Bio-Aurac is a web browser plugin that can be used to highlight genes and protei
 
 #### Managing the sidebar
 
-- any number of cards may be added to the sidebar
-- a card may be removed from the sidebar by clicking the dustbin icon in the top left corner
-- to clear all cards from the sidebar, click the dustbin icon on the right of the sidebar toolbar
-- the contents of the sidebar (i.e. all of the information displayed on each individual card) can be downloaded by clicking the download icon on the right of the sidebar toolbar
+- Any number of cards may be added to the sidebar
+- A card may be removed from the sidebar by clicking the dustbin icon in the top left corner
+- To clear all cards from the sidebar, click the dustbin icon on the right of the sidebar toolbar
+- The contents of the sidebar (i.e. all of the information displayed on each individual card) can be downloaded by clicking the download icon on the right of the sidebar toolbar
 
 #### Configuring what Bio-Aurac will highlight
 
@@ -117,7 +118,7 @@ On entering a link and clicking convert the pdf will be opened in a new browser 
 ## Contact
 Contact us by email at [softwareengineering@md.catapult.org.uk](softwareengineering@md.catapult.org.uk) with any comments or enquiries.  For support please raise a ticket on Github.
 
-## Authors and acknowledgment
+## Developers and acknowledgment
 
 - Ian Dunlop
 - Nick Etherington
