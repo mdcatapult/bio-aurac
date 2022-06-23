@@ -130,12 +130,13 @@ Contact us by email at [softwareengineering@md.catapult.org.uk](softwareengineer
 
 All authors contributed equally.
 
-Thanks to our alpha testers:
-**TODO: list of testers**
-- 
-
 ### Credits
 Designed using elements from Heroicon and Vecteezy.com.
+
+## Known Issues
+
+- PDF conversion does not currently work in Firefox
+- When clicking on the arrow buttons to cycle through instances of a gene or protein on a page those instances are scrolled through alphabetically as opposed to in the order in which they appear on the page.  It can therefore sometimes appear as if a highlighted term has been 'skipped', in reality it hasn't and you will get to every highlight if you keep clicking.
 
 ## Contributing
 If you would like to contribute to this project please check out the underlying code repositories and submit a pull request:
@@ -143,8 +144,6 @@ If you would like to contribute to this project please check out the underlying 
 - [Aurac (browser plugin)](https://github.com/mdcatapult/aurac-web-plugin)
 - [Entity recognition](https://github.com/mdcatapult/entity-recognition)
 - [PDF converter](https://github.com/mdcatapult/PDF-Converter)
-
-**TODO link to Github repos once we have mirrored our Gitlab repos)**
 
 ## Licence
 This project is licensed under the terms of the Apache 2 license, which can be found in the repository as `LICENCE.txt`.
