@@ -44,29 +44,3 @@ services:
     image: medicinesdiscoverycatapult/pdf-converter:1.0.0
     ports:
       - 8000:8000
-
-  
-
-
-
-
-# version: '3.2'
-# services:
-#   api:
-#     build: .
-#     ports:
-#     - "5001:5000"
-
-#     volumes:
-#       - type: volume
-#         source: vast
-#         target: /opt/data-volume
-#         volume:
-#           nocopy: true
-
-# volumes:
-#   vast:
-#     driver_opts:
-#       type: "nfs"
-#       o: "addr=mdc-vast-nfs.medcat.local,nolock,soft,rw"
-#       device: ":/softwareengineering/scratch/dsp/"
