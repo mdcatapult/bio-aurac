@@ -115,6 +115,11 @@ As well as web pages, Bio-Aurac is able to identify and highlight genes and prot
 
 On entering a link and clicking convert the pdf will be opened in a new browser tab, from where it can be highlighted in the same way as a standard web page.
 
+## Web extension architecture
+
+We wrote a [Medium article](https://medium.com/@nejetherington/building-a-web-extension-in-angular-1f77a5a71b85) outlining the architecture and how we overcame some of the challenges we faced building a web extension in Angular. 
+
+
 ## Contact
 Contact us by email at [softwareengineering@md.catapult.org.uk](softwareengineering@md.catapult.org.uk) with any comments or enquiries.  For support please raise a ticket on Github.
 
