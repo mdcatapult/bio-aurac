@@ -25,6 +25,10 @@ The purpose of Bio-Aurac is to facilitate a users literature search. This tool c
     - `docker-compose up -d --build`
     This will run the server in the background on your machine allowing the plugin to function. If in the future the plugin does not work the docker-compose command might need to be run again.
 
+#### Supported Browsers
+
+Recent versions of Chrome and Firefox.
+
 #### Using Bio-Aurac in Chrome
 1) Open your Chrome browser.
 
