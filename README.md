@@ -27,7 +27,7 @@ The purpose of Bio-Aurac is to facilitate a users literature search. This tool c
 
 #### Supported Browsers
 
-Recent versions of Chrome and Firefox.
+Recent versions of Chrome (Recommended) and Firefox.
 
 #### Using Bio-Aurac in Chrome
 1) Open your Chrome browser.
