@@ -145,6 +145,7 @@ Designed using elements from Heroicon and Vecteezy.com.
 ## Known Issues
 
 - PDF conversion does not currently work in Firefox
+- Only PDF URLs ending in `.pdf` can be converted at this time
 - When clicking on the arrow buttons to cycle through instances of a gene or protein on a page those instances are scrolled through alphabetically as opposed to in the order in which they appear on the page.  It can therefore sometimes appear as if a highlighted term has been 'skipped', in reality it hasn't and you will get to every highlight if you keep clicking.
 
 ## Contributing
