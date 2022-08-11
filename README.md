@@ -1,6 +1,6 @@
 # Bio-Aurac
 
-Bio-Aurac is a web browser plugin designed and created by the Medicines Discovery Catapult (https://md.catapult.org.uk/) to support the scientific and drug discovery community.
+Bio-Aurac is a web browser plugin designed and created by the [Medicines Discovery Catapult](https://md.catapult.org.uk/) to support the scientific and drug discovery community.
 
 ## Overview
 The purpose of Bio-Aurac is to facilitate a users literature search. This tool can be used to highlight genes and proteins on a highlighted web page/pdf, and provides useful functionality for the user to further explore a gene/protein of interest.
