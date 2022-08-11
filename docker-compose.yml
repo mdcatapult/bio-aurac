@@ -44,3 +44,5 @@ services:
     image: medicinesdiscoverycatapult/pdf-converter:1.0.0
     ports:
       - 8000:8000
+    restart: on-failure
+    
